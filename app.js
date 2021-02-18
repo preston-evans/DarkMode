@@ -75,6 +75,11 @@ $(storeItems).each(function () {
     }
 });
 $("#clickMe").click(function () {
+    if ($(this).text() == "Toggle Dark Mode") {
+        $(this).text("Toggle Bright Mode");
+    } else {
+        $(this).text("Toggle Dark Mode");
+    };
     $('#contentContainer').toggleClass('darkMode');
     $('h1').toggleClass('darkMode');
     $('span').toggleClass('darkMode');
