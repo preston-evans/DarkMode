@@ -68,8 +68,8 @@ const storeItems = [
 ];
 $(storeItems).each(function () {
     let item = this;
+    console.log(this.name);
     if (item.inStock === true) {
-        console.log(item);
         $('#container').append(`<div class='parent'><div class='child'>$${item.price}</div><div class='child'>${item.name}</div><div class='child'>${item.details}</div></div>`)
     } else {
     }

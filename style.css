@@ -30,6 +30,7 @@ span.darkMode {
     display: inline;
     border: 1px solid black;
     padding: 6px 10px;
+    border-radius: 10px;
 }
 #clickMe.darkMode {
     color: white;
@@ -37,6 +38,7 @@ span.darkMode {
     display: inline;
     border: 1px solid white;
     padding: 6px 10px;
+    border-radius: 10px;
 }
 #master {
     width: 100%;
@@ -48,18 +50,26 @@ span.darkMode {
     flex-direction: row;
     width: 800px;
     background-color: white;
-    padding: 5px;
-    margin: 15px;
+    padding: 10px;
+    margin: 15px 15px 20px;
     box-shadow: 2px 2px 5px gray;
+    border-radius: 10px;
+}
+.parent:last-child {
+    margin-bottom: 30px;
 }
 .parentDarkMode {
     display: flex;
     flex-direction: row;
     width: 800px;
     background-color: gray;
-    padding: 5px;
-    margin: 15px;
-    box-shadow: 2px 2px 5px gray;
+    padding: 10px;
+    margin: 15px 15px 20px;
+    box-shadow: 2px 2px 7px white;
+    border-radius: 10px;
+}
+.parentDarkMode:last-child {
+    margin-bottom: 30px;
 }
 .child {
     width: 33%;
